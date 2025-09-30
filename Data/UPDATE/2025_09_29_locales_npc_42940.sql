@@ -1,0 +1,1 @@
+UPDATE `locales_creature` SET `name_loc6` = 'Fuego de viñedo extinguido' , `name_loc7` = 'Fuego de viñedo extinguido' , `name_loc8` = 'Пожар на винограднике потушен' WHERE `entry` = '42940';
