@@ -27,7 +27,7 @@ public:
         {
             player->ADD_GOSSIP_ITEM( 5, "|TInterface/ICONS/Spell_Arcane_PortalOrgrimmar:35:35|t|cffff0000Orgrimmar"                     , GOSSIP_SENDER_MAIN, 1215);
             player->ADD_GOSSIP_ITEM( 5, "|TInterface/ICONS/Spell_Arcane_TeleportSilvermoon:35:35|t|cffff0000Lunargenta"                    , GOSSIP_SENDER_MAIN, 1217);
-            player->ADD_GOSSIP_ITEM( 5, "|TInterface/ICONS/Spell_Arcane_PortalUndercity:35:35|t|cffff0000Entrañas"                     , GOSSIP_SENDER_MAIN, 1213);
+            player->ADD_GOSSIP_ITEM( 5, "|TInterface/ICONS/Spell_Arcane_PortalUndercity:35:35|t|cffff0000EntraÃ±as"                     , GOSSIP_SENDER_MAIN, 1213);
             player->ADD_GOSSIP_ITEM( 5, "|TInterface/ICONS/Spell_Arcane_PortalThunderBluff:35:35|t|cffff0000Cima del trueno"                 , GOSSIP_SENDER_MAIN, 1225);
             player->ADD_GOSSIP_ITEM( 5, "|TInterface/ICONS/Spell_Arcane_TeleportShattrath:35:35|t|cff00ff00Shattrath"                , GOSSIP_SENDER_MAIN, 1287);
             player->ADD_GOSSIP_ITEM( 5, "|TInterface/ICONS/Spell_Arcane_TeleportDalaran:35:35|t|cff00ff00Dalaran"                       , GOSSIP_SENDER_MAIN, 1205);
@@ -228,7 +228,7 @@ public:
             player->CLOSE_GOSSIP_MENU();
             player->TeleportTo(0, -11916.0f,-1209.0f,  93.0f, 4.71f);
             break;
-			// Caverna ROca Negra
+			// Caverna Roca Negra
         case 1313:
             player->CLOSE_GOSSIP_MENU();
             player->TeleportTo(0, -7570.947266f,-1325.899658f,  245.537994f, 4.799234f);
@@ -262,7 +262,7 @@ public:
 
 			if (uiAdATimer <= diff)
 			{
-				me->MonsterSay("¡Hola Viajero.!", LANG_UNIVERSAL, NULL);
+				me->MonsterSay("Â¡Hola Viajero.!", LANG_UNIVERSAL, NULL);
 				me->HandleEmoteCommand(EMOTE_ONESHOT_EXCLAMATION);
 				me->CastSpell(me, 44940);
 				uiAdATimer = 122000;

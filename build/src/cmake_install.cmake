@@ -42,8 +42,3 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/src/server/cmake_install.cmake")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/src/tools/cmake_install.cmake")
-endif()
-

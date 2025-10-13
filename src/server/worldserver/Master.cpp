@@ -125,17 +125,17 @@ int Master::Run()
     BigNumber seed1;
     seed1.SetRand(16 * 8);
 
-    TC_LOG_INFO("server.worldserver", "%s (worldserver-daemon)", _FULLVERSION);
+    TC_LOG_INFO("server.worldserver", "%s (worldserver-daemon)", "Unknown");
     TC_LOG_INFO("server.worldserver", "<Ctrl-C> to stop.\n");
 	
 	TC_LOG_INFO("server.worldserver", " ______     _        _                            ________                     _______");
-	TC_LOG_INFO("server.worldserver", "//    \\   //        \\                         //       ||   //      \\      //     \\ ");
-	TC_LOG_INFO("server.worldserver", "\\     \\  \\         \\        \\         //   ||       ||   ||      ||      \\");
-	TC_LOG_INFO("server.worldserver", " \\     \\  \\         \\      ||\\       //||  ||_______||   ||      ||       \\");
-	TC_LOG_INFO("server.worldserver", "  \\     \\  \\         \\     || \\     // ||  ||_______/    ||      ||        \\");
-	TC_LOG_INFO("server.worldserver", "   \\     \\  \\         \\    ||  \\   //  ||  ||            ||      ||        //");
-	TC_LOG_INFO("server.worldserver", "    \\     \\  \\         \\   ||   \\ //   ||  ||            ||      ||       //");
-	TC_LOG_INFO("server.worldserver", "     \\_____\\  \\____//   \\  ||    \\/    ||  ||   C O R E  \\______// ||___//");
+	TC_LOG_INFO("server.worldserver", "//    \\\\\\\\   //        \\\\\\\\                         //       ||   //      \\\\\\\\      //     \\\\\\\\ ");
+	TC_LOG_INFO("server.worldserver", "\\\\\\\\     \\\\\\\\  \\\\\\\\         \\\\\\\\        \\\\\\\\         //   ||       ||   ||      ||      \\\\\\\\");
+	TC_LOG_INFO("server.worldserver", " \\\\\\\\     \\\\\\\\  \\\\\\\\         \\\\\\\\      ||\\\\\\\\       //||  ||_______||   ||      ||       \\\\\\\\");
+	TC_LOG_INFO("server.worldserver", "  \\\\\\\\     \\\\\\\\  \\\\\\\\         \\\\\\\\     || \\\\\\\\     // ||  ||_______/    ||      ||        \\\\\\\\");
+	TC_LOG_INFO("server.worldserver", "   \\\\\\\\     \\\\\\\\  \\\\\\\\         \\\\\\\\    ||  \\\\\\\\   //  ||  ||            ||      ||        //");
+	TC_LOG_INFO("server.worldserver", "    \\\\\\\\     \\\\\\\\  \\\\\\\\         \\\\\\\\   ||   \\\\\\\\ //   ||  ||            ||      ||       //");
+	TC_LOG_INFO("server.worldserver", "     \\\\\\\\_____\\\\\\\\  \\\\\\\\____//   \\\\\\\\  ||    \\\\\\\\/    ||  ||   C O R E  \\\\\\\\______// ||___//");
 	TC_LOG_INFO("server.worldserver", "Source Olympus 2023");
 	TC_LOG_INFO("server.worldserver", "Basado en OlympusCore");
 	TC_LOG_INFO("server.worldserver", "MMORPG V2.1 Cata 4.3.4");
@@ -270,7 +270,7 @@ int Master::Run()
     // set server online (allow connecting now)
     LoginDatabase.DirectPExecute("UPDATE realmlist SET flag = flag & ~%u, population = 0 WHERE id = '%u'", REALM_FLAG_INVALID, realmID);
 
-    TC_LOG_INFO("server.worldserver", "%s (worldserver-daemon) ready...", _FULLVERSION);
+    TC_LOG_INFO("server.worldserver", "%s (worldserver-daemon) ready...", "Unknown");
 
     // when the main thread closes the singletons get unloaded
     // since worldrunnable uses them, it will crash if unloaded after master

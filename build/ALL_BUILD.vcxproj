@@ -189,10 +189,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{90DAFD8F-80A1-3510-A5D6-297F945E82CF}</Project>
       <Name>authserver</Name>
     </ProjectReference>
-    <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\dep\bzip2\bzip2.vcxproj">
-      <Project>{544D4FA8-7052-3CFE-81B7-EA7D52E30434}</Project>
-      <Name>bzip2</Name>
-    </ProjectReference>
     <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\collision\collision.vcxproj">
       <Project>{6B5A4CE3-3D36-3889-B94D-F6B6DDEAE657}</Project>
       <Name>collision</Name>
@@ -208,14 +204,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\dep\gsoap\gsoap.vcxproj">
       <Project>{FEDD1F94-6ED4-3D93-8304-BFEB230F51A0}</Project>
       <Name>gsoap</Name>
-    </ProjectReference>
-    <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\tools\map_extractor\mapextractor.vcxproj">
-      <Project>{D7EE4B00-074B-3433-9D3A-F960E232639D}</Project>
-      <Name>mapextractor</Name>
-    </ProjectReference>
-    <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\tools\mmaps_generator\mmaps_generator.vcxproj">
-      <Project>{227EEC30-D50C-3B86-8727-D258DD7444ED}</Project>
-      <Name>mmaps_generator</Name>
     </ProjectReference>
     <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\genrev\revision.h.vcxproj">
       <Project>{0CD89857-A99C-33AE-9A2B-F9649CF8D918}</Project>
@@ -234,18 +222,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared\shared.vcxproj">
       <Project>{F89E14AC-9F71-385D-A3EE-6F2C4125A039}</Project>
       <Name>shared</Name>
-    </ProjectReference>
-    <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\dep\StormLib\storm.vcxproj">
-      <Project>{947F51D1-4954-3238-89A4-65C1A3228247}</Project>
-      <Name>storm</Name>
-    </ProjectReference>
-    <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\tools\vmap4_assembler\vmap4assembler.vcxproj">
-      <Project>{2B3788EF-E9B8-3EEB-9A94-C22F08450F7F}</Project>
-      <Name>vmap4assembler</Name>
-    </ProjectReference>
-    <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\tools\vmap4_extractor\vmap4extractor.vcxproj">
-      <Project>{27F53EED-D8C8-34C6-B0E7-70355B1A7569}</Project>
-      <Name>vmap4extractor</Name>
     </ProjectReference>
     <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\worldserver\worldserver.vcxproj">
       <Project>{C5155B1F-B304-3205-8D1F-E9FC9D485E6F}</Project>

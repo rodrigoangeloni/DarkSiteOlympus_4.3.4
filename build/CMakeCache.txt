@@ -197,10 +197,10 @@ LIB_EAY_DEBUG:FILEPATH=C:/Program Files/OpenSSL-Win64/lib/VC/x64/MDd/libcrypto.l
 LIB_EAY_RELEASE:FILEPATH=C:/Program Files/OpenSSL-Win64/lib/VC/x64/MD/libcrypto.lib
 
 //Specify the directory containing mysql.h.
-MYSQL_INCLUDE_DIR:PATH=F:/WoW/source/The-Legion-Preservation-Project/TrinityCore/build/bin/RelWithDebInfo/_Server/mysql/include
+MYSQL_INCLUDE_DIR:PATH=F:/WoW/source/00 MySQL_Server_8.0.43+Apache+php_Portable/_Server/mysql/include
 
 //Specify the location of the mysql library here.
-MYSQL_LIBRARY:FILEPATH=F:/WoW/source/The-Legion-Preservation-Project/TrinityCore/build/bin/RelWithDebInfo/_Server/mysql/lib/libmysql.lib
+MYSQL_LIBRARY:FILEPATH=F:/WoW/source/00 MySQL_Server_8.0.43+Apache+php_Portable/_Server/mysql/lib/libmysql.lib
 
 //Path to a file.
 OPENSSL_INCLUDE_DIR:PATH=C:/Program Files/OpenSSL-Win64/include
@@ -224,7 +224,7 @@ SSL_EAY_DEBUG:FILEPATH=C:/Program Files/OpenSSL-Win64/lib/VC/x64/MDd/libssl.lib
 SSL_EAY_RELEASE:FILEPATH=C:/Program Files/OpenSSL-Win64/lib/VC/x64/MD/libssl.lib
 
 //Build map/vmap/mmap extraction/assembler tools
-TOOLS:BOOL=ON
+TOOLS:BOOL=OFF
 
 //Use precompiled headers when compiling servers
 USE_COREPCH:BOOL=ON
@@ -332,7 +332,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=27
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=20
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib
@@ -393,5 +393,5 @@ OPENSSL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //Cached branch name
 rev_branch_cached:INTERNAL=main
 //Cached commit-hash
-rev_hash_cached:INTERNAL=dd38c825f6fc+
+rev_hash_cached:INTERNAL=bbd9c71b0720+
 

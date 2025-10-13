@@ -104,11 +104,11 @@
       <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>TurnOffAllWarnings</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;ACE_BUILD_DLL;CMAKE_INTDIR="Debug";ace_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;OLYMPUS_DEBUG;ACE_BUILD_DLL;CMAKE_INTDIR="Debug";ace_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;ACE_BUILD_DLL;CMAKE_INTDIR=\"Debug\";ace_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;OLYMPUS_DEBUG;ACE_BUILD_DLL;CMAKE_INTDIR=\"Debug\";ace_EXPORTS</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\Compression;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\Compression\rle;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\ETCL;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\FIReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\FoxReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\Monitor_Control;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\PrecompiledHeaders;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\QoS;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\QtReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\SSL;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\TkReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\XML_Utils;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\XtReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -150,13 +150,13 @@
       <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>TurnOffAllWarnings</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;ACE_BUILD_DLL;CMAKE_INTDIR="Release";ace_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;OLYMPUS_DEBUG;ACE_BUILD_DLL;CMAKE_INTDIR="Release";ace_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;ACE_BUILD_DLL;CMAKE_INTDIR=\"Release\";ace_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;OLYMPUS_DEBUG;ACE_BUILD_DLL;CMAKE_INTDIR=\"Release\";ace_EXPORTS</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\Compression;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\Compression\rle;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\ETCL;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\FIReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\FoxReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\Monitor_Control;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\PrecompiledHeaders;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\QoS;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\QtReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\SSL;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\TkReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\XML_Utils;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\XtReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -198,13 +198,13 @@
       <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>TurnOffAllWarnings</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;ACE_BUILD_DLL;CMAKE_INTDIR="MinSizeRel";ace_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;OLYMPUS_DEBUG;ACE_BUILD_DLL;CMAKE_INTDIR="MinSizeRel";ace_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;ACE_BUILD_DLL;CMAKE_INTDIR=\"MinSizeRel\";ace_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;OLYMPUS_DEBUG;ACE_BUILD_DLL;CMAKE_INTDIR=\"MinSizeRel\";ace_EXPORTS</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\Compression;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\Compression\rle;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\ETCL;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\FIReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\FoxReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\Monitor_Control;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\PrecompiledHeaders;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\QoS;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\QtReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\SSL;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\TkReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\XML_Utils;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\XtReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -247,11 +247,11 @@
       <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>TurnOffAllWarnings</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;ACE_BUILD_DLL;CMAKE_INTDIR="RelWithDebInfo";ace_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;OLYMPUS_DEBUG;ACE_BUILD_DLL;CMAKE_INTDIR="RelWithDebInfo";ace_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;ACE_BUILD_DLL;CMAKE_INTDIR=\"RelWithDebInfo\";ace_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;OLYMPUS_DEBUG;ACE_BUILD_DLL;CMAKE_INTDIR=\"RelWithDebInfo\";ace_EXPORTS</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\Compression;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\Compression\rle;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\ETCL;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\FIReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\FoxReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\Monitor_Control;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\PrecompiledHeaders;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\QoS;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\QtReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\SSL;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\TkReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\XML_Utils;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite\ace\XtReactor;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>

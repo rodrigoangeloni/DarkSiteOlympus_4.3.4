@@ -99,21 +99,13 @@ extern int main(int argc, char **argv)
     if (!sConfigMgr->LoadInitial(cfg_file))
     {
         printf("Invalid or missing configuration file : %s\n", cfg_file);
-        printf("Verify that the file exists and has \'[authserver]\' written in the top of the file!\n");
+        printf("Verify that the file exists and has '[authserver]' written in the top of the file!\n");
         return 1;
     }
 
-    TC_LOG_INFO("server.authserver", "%s (authserver)", _FULLVERSION);
-    TC_LOG_INFO("server.authserver", "<Ctrl-C> to stop.\n");
-    TC_LOG_INFO("server.authserver", "Using configuration file %s.", cfg_file);	
-	TC_LOG_INFO("server.authserver", " ______     _        _                            ________                     _______");
-    TC_LOG_INFO("server.authserver", "//    \\   //        \\                         //       ||   //      \\      //     \\ ");
-    TC_LOG_INFO("server.authserver", "\\     \\  \\         \\        \\         //   ||       ||   ||      ||      \\");
-    TC_LOG_INFO("server.authserver", " \\     \\  \\         \\      ||\\       //||  ||_______||   ||      ||       \\");
-    TC_LOG_INFO("server.authserver", "  \\     \\  \\         \\     || \\     // ||  ||_______/    ||      ||        \\");
-    TC_LOG_INFO("server.authserver", "   \\     \\  \\         \\    ||  \\   //  ||  ||            ||      ||        //");
-    TC_LOG_INFO("server.authserver", "    \\     \\  \\         \\   ||   \\ //   ||  ||            ||      ||       //");
-    TC_LOG_INFO("server.authserver", "     \\_____\\  \\____//   \\  ||    \\/    ||  ||   C O R E  \\______// ||___//");
+    TC_LOG_INFO("server.authserver", "authserver iniciado");
+    TC_LOG_INFO("server.authserver", "Ctrl-C to stop.");
+    TC_LOG_INFO("server.authserver", "Using configuration file.");
     TC_LOG_INFO("server.authserver", "Source Olympus 2023");
     TC_LOG_INFO("server.authserver", "Basado en OlympusCore");
     TC_LOG_INFO("server.authserver", "MMORPG V2.1 Cata 4.3.4");

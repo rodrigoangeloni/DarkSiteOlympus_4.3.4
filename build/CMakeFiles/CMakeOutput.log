@@ -7,7 +7,7 @@ Id flags:
 The output was:
 0
 Versión de MSBuild 17.14.14+a129329f1 para .NET Framework
-Compilación iniciada a las 12/10/2025 21:06:26.
+Compilación iniciada a las 12/10/2025 23:26:18.
 
 Proyecto "F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\CMakeFiles\3.24.3\CompilerIdC\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
 PrepareForBuild:
@@ -36,7 +36,7 @@ Compilación correcta.
     0 Advertencia(s)
     0 Errores
 
-Tiempo transcurrido 00:00:00.38
+Tiempo transcurrido 00:00:00.42
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -53,7 +53,7 @@ Id flags:
 The output was:
 0
 Versión de MSBuild 17.14.14+a129329f1 para .NET Framework
-Compilación iniciada a las 12/10/2025 21:06:27.
+Compilación iniciada a las 12/10/2025 23:26:19.
 
 Proyecto "F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\CMakeFiles\3.24.3\CompilerIdCXX\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
 PrepareForBuild:
@@ -82,7 +82,7 @@ Compilación correcta.
     0 Advertencia(s)
     0 Errores
 
-Tiempo transcurrido 00:00:00.39
+Tiempo transcurrido 00:00:00.43
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -94,26 +94,26 @@ The CXX compiler identification is MSVC, found in "F:/WoW/source/Darkside Cata 4
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_1328c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Versión de MSBuild 17.14.14+a129329f1 para .NET Framework
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_10ffd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Versión de MSBuild 17.14.14+a129329f1 para .NET Framework
 
   Compilador de optimización de C/C++ de Microsoft (R) versión 19.44.35213 para x64
   (C) Microsoft Corporation. Todos los derechos reservados.
-  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1328c.dir\Debug\\" /Fd"cmTC_1328c.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCCompilerABI.c"
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_10ffd.dir\Debug\\" /Fd"cmTC_10ffd.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCCompilerABI.c"
   CMakeCCompilerABI.c
-  cmTC_1328c.vcxproj -> F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\CMakeFiles\CMakeTmp\Debug\cmTC_1328c.exe
+  cmTC_10ffd.vcxproj -> F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\CMakeFiles\CMakeTmp\Debug\cmTC_10ffd.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_b929a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Versión de MSBuild 17.14.14+a129329f1 para .NET Framework
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_f2371.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Versión de MSBuild 17.14.14+a129329f1 para .NET Framework
 
   Compilador de optimización de C/C++ de Microsoft (R) versión 19.44.35213 para x64
   (C) Microsoft Corporation. Todos los derechos reservados.
-  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b929a.dir\Debug\\" /Fd"cmTC_b929a.dir\Debug\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXCompilerABI.cpp"
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f2371.dir\Debug\\" /Fd"cmTC_f2371.dir\Debug\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXCompilerABI.cpp"
   CMakeCXXCompilerABI.cpp
-  cmTC_b929a.vcxproj -> F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\CMakeFiles\CMakeTmp\Debug\cmTC_b929a.exe
+  cmTC_f2371.vcxproj -> F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\CMakeFiles\CMakeTmp\Debug\cmTC_f2371.exe
 
 
 

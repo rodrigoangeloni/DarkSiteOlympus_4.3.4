@@ -31,7 +31,7 @@ EndScriptData */
 #include "SystemConfig.h"
 
 #if PLATFORM == PLATFORM_WINDOWS
-    const std::string FM_CORE_SHELL = ".\\coreshell.bat ";
+    const std::string FM_CORE_SHELL = ".\\\\\\\\coreshell.bat ";
 #else
     const std::string FM_CORE_SHELL = "./coreshell.sh ";
 #endif
@@ -123,7 +123,7 @@ public:
         std::string uptime          = secsToTimeString(sWorld->GetUptime());
         uint32 updateTime           = sWorld->GetUpdateTime();
 
-        handler->SendSysMessage(_FULLVERSION);
+        handler->SendSysMessage("Unknown");
         handler->PSendSysMessage(LANG_CONNECTED_PLAYERS, playersNum, maxPlayersNum);
         handler->PSendSysMessage(LANG_CONNECTED_USERS, activeClientsNum, maxActiveClientsNum, queuedClientsNum, maxQueuedClientsNum);
         handler->PSendSysMessage(LANG_UPTIME, uptime.c_str());
@@ -274,7 +274,7 @@ public:
         char* name = strtok(NULL, " ");
         char* level = strtok(NULL, " ");
 
-        if (!type || !name || !level || *name == '\0' || *level == '\0' || (*type != 'a' && *type != 'l'))
+        if (!type || !name || !level || *name == '\\\\0' || *level == '\\\\0' || (*type != 'a' && *type != 'l'))
             return false;
 
         sLog->SetLogLevel(name, level, *type == 'l');
@@ -296,7 +296,7 @@ public:
             return false;
 
         sWorld->SetRecordDiffInterval(newTime);
-        printf("Record diff every %u ms\n", newTime);
+        printf("Record diff every %u ms\\\\n", newTime);
 
         return true;
     }
@@ -375,7 +375,7 @@ private:
         exitCode = atoi(exitCodeStr);
 
         // Handle atoi() errors
-        if (exitCode == 0 && (exitCodeStr[0] != '0' || exitCodeStr[1] != '\0'))
+        if (exitCode == 0 && (exitCodeStr[0] != '0' || exitCodeStr[1] != '\\\\0'))
             return false;
 
         // Exit code should be in range of 0-125, 126-255 is used
@@ -405,7 +405,7 @@ private:
 		{
 			delay = atoi(delayStr);
 			// Prevent interpret wrong arg value as 0 secs shutdown time
-			if ((delay == 0 && (delayStr[0] != '0' || delayStr[1] != '\0')) || delay < 0)
+			if ((delay == 0 && (delayStr[0] != '0' || delayStr[1] != '\\\\0')) || delay < 0)
 				return false;
 		}
 		else
@@ -427,7 +427,7 @@ private:
             else
             {
                 strcat(reason, nextToken);
-                if (char* remainingTokens = strtok(nullptr, "\0"))
+                if (char* remainingTokens = strtok(nullptr, "\\\\0"))
                 {
                     strcat(reason, " ");
                     strcat(reason, remainingTokens);
@@ -442,7 +442,7 @@ private:
 				return false;
 
         // Prevent interpret wrong arg value as 0 secs shutdown time
-        if ((delay == 0 && (delayStr[0] != '0' || delayStr[1] != '\0')) || delay < 0)
+        if ((delay == 0 && (delayStr[0] != '0' || delayStr[1] != '\\\\0')) || delay < 0)
             return false;
 
 		handler->PSendSysMessage("Shutting down server in %u seconds!", delay);
