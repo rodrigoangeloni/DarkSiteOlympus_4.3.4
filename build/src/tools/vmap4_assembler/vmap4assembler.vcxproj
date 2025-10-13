@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2B3788EF-E9B8-3EEB-9A94-C22F08450F7F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>vmap4assembler</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vmap4assembler.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vmap4assembler</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vmap4assembler.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vmap4assembler</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">vmap4assembler.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">vmap4assembler</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">vmap4assembler.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">vmap4assembler</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\g3dlite\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Maps;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Models;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4355;4244;4985;4267;4619;4996;4355;4244;4985;4267;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\g3dlite\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Maps;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Models;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\g3dlite\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Maps;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Models;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\server\collision\Debug\collision.lib;..\..\..\dep\g3dlite\Debug\g3dlib.lib;..\..\..\dep\zlib\Debug\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/src/tools/vmap4_assembler/Debug/vmap4assembler.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/bin/Debug/vmap4assembler.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\g3dlite\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Maps;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Models;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4996;4355;4244;4985;4267;4619;4996;4355;4244;4985;4267;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\g3dlite\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Maps;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Models;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\g3dlite\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Maps;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Models;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\server\collision\Release\collision.lib;..\..\..\dep\g3dlite\Release\g3dlib.lib;..\..\..\dep\zlib\Release\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/src/tools/vmap4_assembler/Release/vmap4assembler.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/bin/Release/vmap4assembler.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\g3dlite\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Maps;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Models;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4996;4355;4244;4985;4267;4619;4996;4355;4244;4985;4267;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\g3dlite\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Maps;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Models;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\g3dlite\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Maps;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Models;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\server\collision\MinSizeRel\collision.lib;..\..\..\dep\g3dlite\MinSizeRel\g3dlib.lib;..\..\..\dep\zlib\MinSizeRel\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/src/tools/vmap4_assembler/MinSizeRel/vmap4assembler.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/bin/MinSizeRel/vmap4assembler.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\g3dlite\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Maps;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Models;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4355;4244;4985;4267;4619;4996;4355;4244;4985;4267;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\g3dlite\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Maps;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Models;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\g3dlite\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Maps;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\collision\Models;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\server\collision\RelWithDebInfo\collision.lib;..\..\..\dep\g3dlite\RelWithDebInfo\g3dlib.lib;..\..\..\dep\zlib\RelWithDebInfo\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/src/tools/vmap4_assembler/RelWithDebInfo/vmap4assembler.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/bin/RelWithDebInfo/vmap4assembler.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\tools\vmap4_assembler\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/src/tools/vmap4_assembler/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4" "-BF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build" --check-stamp-file "F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/src/tools/vmap4_assembler/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\tools\vmap4_assembler\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/src/tools/vmap4_assembler/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4" "-BF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build" --check-stamp-file "F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/src/tools/vmap4_assembler/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\tools\vmap4_assembler\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/src/tools/vmap4_assembler/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4" "-BF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build" --check-stamp-file "F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/src/tools/vmap4_assembler/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\tools\vmap4_assembler\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/src/tools/vmap4_assembler/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4" "-BF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build" --check-stamp-file "F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/src/tools/vmap4_assembler/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\tools\vmap4_assembler\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\tools\vmap4_assembler\VMapAssembler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\ZERO_CHECK.vcxproj">
+      <Project>{6AD396E5-BA12-38F2-835F-9978B0AA89E5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\collision\collision.vcxproj">
+      <Project>{6B5A4CE3-3D36-3889-B94D-F6B6DDEAE657}</Project>
+      <Name>collision</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\dep\g3dlite\g3dlib.vcxproj">
+      <Project>{4B495ADA-DBCE-3942-B4E7-A22EFFECAF28}</Project>
+      <Name>g3dlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\dep\StormLib\storm.vcxproj">
+      <Project>{947F51D1-4954-3238-89A4-65C1A3228247}</Project>
+      <Name>storm</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\dep\zlib\zlib.vcxproj">
+      <Project>{C7B8B201-1D37-3B4F-AB5F-467BAF5F67F7}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

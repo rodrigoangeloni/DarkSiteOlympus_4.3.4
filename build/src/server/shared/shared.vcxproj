@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F89E14AC-9F71-385D-A3EE-6F2C4125A039}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>shared</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">shared.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">shared</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">shared.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">shared</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">shared.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">shared</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">shared.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">shared</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\recastnavigation\Detour;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\sockets\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\utf8cpp;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\SFMT;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Configuration;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\DataStores;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Packets;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\game\Entities\Object;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;F:\WoW\source\The-Legion-Preservation-Project\TrinityCore\build\bin\RelWithDebInfo\_Server\mysql\include;C:\Program Files\OpenSSL-Win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4355;4244;4985;4267;4619;4996;4355;4244;4985;4267;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>sharedPCH.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>sharedPCH.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;SFMT_MEXP=19937;HAVE_SSE2;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;SFMT_MEXP=19937;HAVE_SSE2;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\recastnavigation\Detour;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\sockets\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\utf8cpp;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\SFMT;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Configuration;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\DataStores;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Packets;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\game\Entities\Object;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;F:\WoW\source\The-Legion-Preservation-Project\TrinityCore\build\bin\RelWithDebInfo\_Server\mysql\include;C:\Program Files\OpenSSL-Win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\recastnavigation\Detour;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\sockets\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\utf8cpp;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\SFMT;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Configuration;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\DataStores;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Packets;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\game\Entities\Object;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;F:\WoW\source\The-Legion-Preservation-Project\TrinityCore\build\bin\RelWithDebInfo\_Server\mysql\include;C:\Program Files\OpenSSL-Win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\recastnavigation\Detour;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\sockets\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\utf8cpp;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\SFMT;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Configuration;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\DataStores;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Packets;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\game\Entities\Object;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;F:\WoW\source\The-Legion-Preservation-Project\TrinityCore\build\bin\RelWithDebInfo\_Server\mysql\include;C:\Program Files\OpenSSL-Win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4996;4355;4244;4985;4267;4619;4996;4355;4244;4985;4267;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>sharedPCH.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>sharedPCH.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;SFMT_MEXP=19937;HAVE_SSE2;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;SFMT_MEXP=19937;HAVE_SSE2;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\recastnavigation\Detour;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\sockets\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\utf8cpp;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\SFMT;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Configuration;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\DataStores;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Packets;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\game\Entities\Object;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;F:\WoW\source\The-Legion-Preservation-Project\TrinityCore\build\bin\RelWithDebInfo\_Server\mysql\include;C:\Program Files\OpenSSL-Win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\recastnavigation\Detour;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\sockets\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\utf8cpp;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\SFMT;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Configuration;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\DataStores;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Packets;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\game\Entities\Object;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;F:\WoW\source\The-Legion-Preservation-Project\TrinityCore\build\bin\RelWithDebInfo\_Server\mysql\include;C:\Program Files\OpenSSL-Win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\recastnavigation\Detour;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\sockets\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\utf8cpp;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\SFMT;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Configuration;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\DataStores;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Packets;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\game\Entities\Object;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;F:\WoW\source\The-Legion-Preservation-Project\TrinityCore\build\bin\RelWithDebInfo\_Server\mysql\include;C:\Program Files\OpenSSL-Win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4996;4355;4244;4985;4267;4619;4996;4355;4244;4985;4267;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>sharedPCH.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>sharedPCH.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;SFMT_MEXP=19937;HAVE_SSE2;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;SFMT_MEXP=19937;HAVE_SSE2;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\recastnavigation\Detour;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\sockets\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\utf8cpp;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\SFMT;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Configuration;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\DataStores;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Packets;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\game\Entities\Object;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;F:\WoW\source\The-Legion-Preservation-Project\TrinityCore\build\bin\RelWithDebInfo\_Server\mysql\include;C:\Program Files\OpenSSL-Win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\recastnavigation\Detour;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\sockets\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\utf8cpp;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\SFMT;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Configuration;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\DataStores;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Packets;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\game\Entities\Object;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;F:\WoW\source\The-Legion-Preservation-Project\TrinityCore\build\bin\RelWithDebInfo\_Server\mysql\include;C:\Program Files\OpenSSL-Win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\recastnavigation\Detour;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\sockets\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\utf8cpp;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\SFMT;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Configuration;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\DataStores;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Packets;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\game\Entities\Object;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;F:\WoW\source\The-Legion-Preservation-Project\TrinityCore\build\bin\RelWithDebInfo\_Server\mysql\include;C:\Program Files\OpenSSL-Win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4355;4244;4985;4267;4619;4996;4355;4244;4985;4267;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>sharedPCH.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>sharedPCH.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;SFMT_MEXP=19937;HAVE_SSE2;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;SFMT_MEXP=19937;HAVE_SSE2;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\recastnavigation\Detour;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\sockets\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\utf8cpp;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\SFMT;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Configuration;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\DataStores;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Packets;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\game\Entities\Object;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;F:\WoW\source\The-Legion-Preservation-Project\TrinityCore\build\bin\RelWithDebInfo\_Server\mysql\include;C:\Program Files\OpenSSL-Win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\recastnavigation\Detour;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\sockets\include;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\utf8cpp;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\SFMT;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Configuration;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\DataStores;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Packets;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\game\Entities\Object;F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\acelite;F:\WoW\source\The-Legion-Preservation-Project\TrinityCore\build\bin\RelWithDebInfo\_Server\mysql\include;C:\Program Files\OpenSSL-Win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/src/server/shared/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4" "-BF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build" --check-stamp-file "F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/src/server/shared/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/src/server/shared/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4" "-BF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build" --check-stamp-file "F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/src/server/shared/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/src/server/shared/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4" "-BF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build" --check-stamp-file "F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/src/server/shared/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/src/server/shared/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4" "-BF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build" --check-stamp-file "F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/src/server/shared/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\src\server\shared\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Configuration\Config.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Configuration\Config.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography\ARC4.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography\ARC4.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography\Authentication\AuthCrypt.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography\Authentication\AuthCrypt.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography\BigNumber.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography\BigNumber.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography\HMACSHA1.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography\HMACSHA1.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography\SHA1.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography\SHA1.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Cryptography\WardenKeyGeneration.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\AdhocStatement.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\AdhocStatement.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\DatabaseEnv.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\DatabaseWorker.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\DatabaseWorker.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\DatabaseWorkerPool.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\Field.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\Field.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\Implementation\CharacterDatabase.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\Implementation\CharacterDatabase.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\Implementation\LoginDatabase.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\Implementation\LoginDatabase.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\Implementation\WorldDatabase.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\Implementation\WorldDatabase.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\MySQLConnection.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\MySQLConnection.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\MySQLThreading.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\PreparedStatement.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\PreparedStatement.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\QueryHolder.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\QueryHolder.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\QueryResult.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\QueryResult.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\SQLOperation.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\Transaction.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Database\Transaction.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\DataStores\DB2FileLoader.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\DataStores\DB2FileLoader.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\DataStores\DB2Store.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\DataStores\DBCFileLoader.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\DataStores\DBCFileLoader.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\DataStores\DBCStore.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic\FactoryHolder.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic\HashNamespace.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic\LinkedList.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic\LinkedReference\RefManager.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic\LinkedReference\Reference.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic\ObjectRegistry.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic\TypeContainer.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic\TypeContainerFunctions.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic\TypeContainerVisitor.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic\TypeList.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic\UnorderedMap.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Dynamic\UnorderedSet.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging\Appender.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging\Appender.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging\AppenderConsole.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging\AppenderConsole.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging\AppenderDB.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging\AppenderDB.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging\AppenderFile.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging\AppenderFile.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging\Log.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging\Log.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging\LogOperation.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging\LogOperation.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging\LogWorker.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging\LogWorker.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging\Logger.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Logging\Logger.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Packets\ByteBuffer.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading\Callback.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading\DelayExecutor.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading\DelayExecutor.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading\LockedQueue.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading\LockedVector.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading\Task.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading\TaskMgr.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading\TaskMgr.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading\Threading.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Threading\Threading.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities\ByteConverter.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities\Duration.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities\EventProcessor.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities\EventProcessor.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities\SFMTRand.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities\SFMTRand.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities\ServiceWin32.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities\ServiceWin32.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities\SignalHandler.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities\TaskScheduler.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities\TaskScheduler.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities\Timer.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities\Util.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Utilities\Util.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\AutoPtr.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Common.cpp" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Common.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\CompilerDefs.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Containers.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Define.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\IteratorPair.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Memory.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\SystemConfig.h" />
+    <ClInclude Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\Debugging\Errors.h" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\src\server\shared\PrecompiledHeaders\sharedPCH.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sharedPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sharedPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sharedPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sharedPCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\ZERO_CHECK.vcxproj">
+      <Project>{6AD396E5-BA12-38F2-835F-9978B0AA89E5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\dep\acelite\ace\ace.vcxproj">
+      <Project>{1C490DC0-4705-38F6-81DB-AF02F0E483CB}</Project>
+      <Name>ace</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\dep\SFMT\sfmt.vcxproj">
+      <Project>{FA8B9A8F-2871-30F1-A911-57750BA152D0}</Project>
+      <Name>sfmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\dep\zlib\zlib.vcxproj">
+      <Project>{C7B8B201-1D37-3B4F-AB5F-467BAF5F67F7}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

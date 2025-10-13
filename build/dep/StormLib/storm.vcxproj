@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{947F51D1-4954-3238-89A4-65C1A3228247}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>storm</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\dep\StormLib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">storm.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">StormLib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\dep\StormLib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">storm.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">StormLib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\dep\StormLib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">storm.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">StormLib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\dep\StormLib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">storm.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">StormLib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4355;4244;4985;4267;4619;4996;4355;4244;4985;4267;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;_7ZIP_ST;BZ_STRICT_ANSI;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;_7ZIP_ST;BZ_STRICT_ANSI;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4996;4355;4244;4985;4267;4619;4996;4355;4244;4985;4267;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;_7ZIP_ST;BZ_STRICT_ANSI;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;_7ZIP_ST;BZ_STRICT_ANSI;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4996;4355;4244;4985;4267;4619;4996;4355;4244;4985;4267;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;_7ZIP_ST;BZ_STRICT_ANSI;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;_7ZIP_ST;BZ_STRICT_ANSI;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4355;4244;4985;4267;4619;4996;4355;4244;4985;4267;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;_7ZIP_ST;BZ_STRICT_ANSI;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN64;_BUILD_DIRECTIVE=\\"$(ConfigurationName)\\";_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;SCRIPTS;NO_CORE_FUNCS;OLYMPUS_DEBUG;_7ZIP_ST;BZ_STRICT_ANSI;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/dep/StormLib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4" "-BF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build" --check-stamp-file "F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/dep/StormLib/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\dep\StormLib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/dep/StormLib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4" "-BF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build" --check-stamp-file "F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/dep/StormLib/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\dep\StormLib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/dep/StormLib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4" "-BF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build" --check-stamp-file "F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/dep/StormLib/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\dep\StormLib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/dep/StormLib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4" "-BF:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build" --check-stamp-file "F:/WoW/source/Darkside Cata 4.3.4/DarkSiteOlympus_4.3.4/build/dep/StormLib/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\dep\StormLib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\adpcm\adpcm.cpp" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\huffman\huff.cpp" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\jenkins\lookup3.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\lzma\C\LzFind.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\lzma\C\LzmaDec.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\lzma\C\LzmaEnc.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\pklib\explode.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\pklib\implode.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\sparse\sparse.cpp" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\FileStream.cpp" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\SBaseCommon.cpp" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\SBaseFileTable.cpp" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\SCompression.cpp" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\SFileAddFile.cpp" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\SFileAttributes.cpp" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\SFileCompactArchive.cpp" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\SFileCreateArchive.cpp" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\SFileExtractFile.cpp" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\SFileFindFile.cpp" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\SFileListFile.cpp" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\SFileOpenArchive.cpp" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\SFileOpenFileEx.cpp" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\SFilePatchArchives.cpp" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\SFileReadFile.cpp" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\SFileVerify.cpp" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\bzip2\blocksort.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\bzip2\bzlib.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\bzip2\compress.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\bzip2\crctable.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\bzip2\decompress.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\bzip2\huffman.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\bzip2\randtable.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\zlib\adler32.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\zlib\compress2.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\zlib\crc32.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\zlib\deflate.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\zlib\inffast.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\zlib\inflate.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\zlib\inftrees.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\zlib\trees.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\zlib\zutil.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\hashes\hash_memory.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\hashes\md5.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\hashes\sha1.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\math\ltm_desc.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\math\multi.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\math\rand_prime.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\misc\base64_decode.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\misc\crypt_argchk.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\misc\crypt_find_hash.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\misc\crypt_find_prng.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\misc\crypt_hash_descriptor.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\misc\crypt_hash_is_valid.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\misc\crypt_libc.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\misc\crypt_ltc_mp_descriptor.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\misc\crypt_prng_descriptor.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\misc\crypt_prng_is_valid.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\misc\crypt_register_hash.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\misc\crypt_register_prng.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\misc\zeromem.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_decode_bit_string.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_decode_boolean.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_decode_choice.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_decode_ia5_string.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_decode_integer.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_decode_object_identifier.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_decode_octet_string.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_decode_printable_string.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_decode_sequence_ex.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_decode_sequence_flexi.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_decode_sequence_multi.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_decode_short_integer.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_decode_utctime.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_decode_utf8_string.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_length_bit_string.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_length_boolean.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_length_ia5_string.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_length_integer.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_length_object_identifier.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_length_octet_string.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_length_printable_string.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_length_sequence.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_length_utctime.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_sequence_free.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_length_utf8_string.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\asn1\der_length_short_integer.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\ecc\ltc_ecc_map.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\ecc\ltc_ecc_mul2add.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\ecc\ltc_ecc_mulmod.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\ecc\ltc_ecc_points.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\ecc\ltc_ecc_projective_add_point.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\ecc\ltc_ecc_projective_dbl_point.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\pkcs1\pkcs_1_mgf1.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\pkcs1\pkcs_1_oaep_decode.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\pkcs1\pkcs_1_pss_decode.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\pkcs1\pkcs_1_v1_5_decode.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\rsa\rsa_exptmod.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\rsa\rsa_free.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\rsa\rsa_import.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\rsa\rsa_make_key.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\rsa\rsa_verify_hash.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtomcrypt\src\pk\rsa\rsa_verify_simple.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bncore.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_fast_mp_invmod.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_fast_mp_montgomery_reduce.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_fast_s_mp_mul_digs.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_fast_s_mp_mul_high_digs.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_fast_s_mp_sqr.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_2expt.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_abs.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_add.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_addmod.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_add_d.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_and.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_clamp.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_clear.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_clear_multi.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_cmp.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_cmp_d.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_cmp_mag.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_cnt_lsb.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_copy.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_count_bits.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_div.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_div_2.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_div_2d.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_div_3.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_div_d.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_dr_is_modulus.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_dr_reduce.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_dr_setup.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_exch.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_exptmod.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_exptmod_fast.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_expt_d.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_exteuclid.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_fread.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_fwrite.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_gcd.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_get_int.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_grow.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_init.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_init_copy.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_init_multi.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_init_set.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_init_set_int.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_init_size.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_invmod.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_invmod_slow.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_is_square.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_jacobi.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_karatsuba_mul.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_karatsuba_sqr.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_lcm.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_lshd.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_mod.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_mod_2d.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_mod_d.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_montgomery_calc_normalization.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_montgomery_reduce.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_montgomery_setup.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_mul.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_mulmod.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_mul_2.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_mul_2d.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_mul_d.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_neg.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_n_root.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_or.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_prime_fermat.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_prime_is_divisible.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_prime_is_prime.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_prime_miller_rabin.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_prime_next_prime.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_prime_rabin_miller_trials.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_prime_random_ex.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_radix_size.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_radix_smap.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_rand.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_read_radix.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_read_signed_bin.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_read_unsigned_bin.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_reduce.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_reduce_2k.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_reduce_2k_l.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_reduce_2k_setup.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_reduce_2k_setup_l.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_reduce_is_2k.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_reduce_is_2k_l.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_reduce_setup.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_rshd.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_set.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_set_int.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_shrink.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_signed_bin_size.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_sqr.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_sqrmod.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_sqrt.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_sub.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_submod.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_sub_d.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_toom_mul.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_toom_sqr.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_toradix.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_toradix_n.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_to_signed_bin.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_to_signed_bin_n.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_to_unsigned_bin.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_to_unsigned_bin_n.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_unsigned_bin_size.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_xor.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_mp_zero.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_prime_tab.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_reverse.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_s_mp_add.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_s_mp_exptmod.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_s_mp_mul_digs.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_s_mp_mul_high_digs.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_s_mp_sqr.c" />
+    <ClCompile Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\dep\StormLib\src\libtommath\bn_s_mp_sub.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\WoW\source\Darkside Cata 4.3.4\DarkSiteOlympus_4.3.4\build\ZERO_CHECK.vcxproj">
+      <Project>{6AD396E5-BA12-38F2-835F-9978B0AA89E5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
