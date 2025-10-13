@@ -1,2 +1,23 @@
-# Archivos y carpetas ignorados por git para proyectos C++ con CMake
+build*/
+.directory
+.mailmap
+*.orig
+*.rej
+*~
+.hg/
+*.kdev*
+.DS_Store
+CMakeLists.txt.user
+*.bak
+*.patch
+*.diff
+*.REMOTE.*
+*.BACKUP.*
 build/
+*.LOCAL.*
+nbproject/*
+.idea/*
+.browse.VC*
+.vscode
+cmake-build-*/
+.vs
