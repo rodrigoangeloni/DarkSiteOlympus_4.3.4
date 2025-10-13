@@ -1,0 +1,2 @@
+# Archivos y carpetas ignorados por git para proyectos C++ con CMake
+build/
