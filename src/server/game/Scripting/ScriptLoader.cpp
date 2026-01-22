@@ -1628,6 +1628,7 @@ void AddSC_npc_teleport();
 void AddSC_PvPTitles();
 void AddSC_world_chat();
 void AddSC_VAS_AutoBalance();
+void AddSC_npc_heirloom();
 #endif
 
 void AddCustomScripts()
@@ -1648,6 +1649,7 @@ void AddCustomScripts()
 	AddSC_PvPTitles();
 	AddSC_world_chat();
 	AddSC_VAS_AutoBalance();
+    AddSC_npc_heirloom();
 
 #endif
 }

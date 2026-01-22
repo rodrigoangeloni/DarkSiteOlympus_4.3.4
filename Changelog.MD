@@ -140,3 +140,12 @@ Quest fix Gunship Down
 Quest fix On Second Thought, Take One Prisoner
 Quest fix Some Spraining to Do
 Quest fix Deathwing's Fall
+
+### ==== 22/01/2026 ====
+Fix OpenSSL 3.x support (Fix 'Connected' freeze)
+Enable Legacy Provider for newer OpenSSL versions in AuthServer & WorldServer
+Add Custom NPC Heirloom Vendor (Vendedor de Reliquias)
+    * Instructions to enable NPC:
+        1. Recompile worldserver (Clean & Build) to include the new script `src/server/scripts/Custom/npc_heirloom.cpp` and `ScriptLoader.cpp` changes.
+        2. Execute the SQL file in 'world' database: `sql/CUSTOM/world/2026_01_22_00_npc_heirloom.sql`.
+        3. Spawn in game: `.npc add 99000`.

@@ -22,6 +22,9 @@
 
 #include <openssl/opensslv.h>
 #include <openssl/crypto.h>
+#if OPENSSL_VERSION_NUMBER >= 0x30000000L
+#include <openssl/provider.h>
+#endif
 #include <ace/Version.h>
 
 #include "Common.h"
@@ -73,6 +76,11 @@ void usage(const char *prog)
 /// Launch the Olympus server
 extern int main(int argc, char **argv)
 {
+#if OPENSSL_VERSION_NUMBER >= 0x30000000L
+    OSSL_PROVIDER_load(NULL, "legacy");
+    OSSL_PROVIDER_load(NULL, "default");
+#endif
+
     ///- Command line parsing to get the configuration file name
     char const* cfg_file = _OLYMPUS_CORE_CONFIG;
     int c = 1;
