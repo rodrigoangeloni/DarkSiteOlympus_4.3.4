@@ -23,6 +23,104 @@
    - Reiniciar servidor o recargar caché (`.reload creature_template [ID]`) si el SQL se puso con el server on.
    - Spawnearlo: `.npc add [ID]`.
 
+---
+
+## Ejemplo Completo: Sistema de Promoción (npc_promocion.cpp)
+
+El script `npc_promocion.cpp` es un ejemplo avanzado de NPC custom que implementa:
+
+### Características:
+*   **Menú Gossip dinámico** según la clase del jugador (10 clases, 22 especializaciones)
+*   **Equipamiento desde base de datos** (`world.npc_promotion_items`)
+*   **Control de uso** (1 vez por cuenta)
+*   **Registro de actividad** (`characters.npc_promotion_log`)
+*   **Promoción completa**: Nivel 80 + Tier 10 + oro + bolsas + monturas
+
+### Código Clave:
+
+```cpp
+class npc_promocion : public CreatureScript
+{
+public:
+    npc_promocion() : CreatureScript("npc_promocion") { }
+
+    bool OnGossipHello(Player* player, Creature* creature) override
+    {
+        // Verificar elegibilidad
+        uint32 accountId = player->GetSession()->GetAccountId();
+        uint8 promotionCount = GetAccountPromotionCount(accountId);
+        
+        if (promotionCount >= 1) {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "Ya usaste tu promoción", 0, 100);
+            SendGossipMenuFor(player, 1, creature->GetGUID());
+            return true;
+        }
+        
+        // Menú dinámico según clase
+        switch (player->getClass()) {
+            case CLASS_WARRIOR:
+                AddGossipItemFor(player, GOSSIP_ICON_BATTLE, "Guerrero Tanque", 0, 1);
+                AddGossipItemFor(player, GOSSIP_ICON_BATTLE, "Guerrero DPS", 0, 2);
+                break;
+            // ... más clases
+        }
+        
+        SendGossipMenuFor(player, 1, creature->GetGUID());
+        return true;
+    }
+    
+    bool OnGossipSelect(Player* player, Creature* creature, uint32 sender, uint32 action) override
+    {
+        // Aplicar promoción
+        player->GiveLevel(80);
+        player->ModifyMoney(10000 * GOLD);
+        EquipPlayerGear(player, GetRoleFromAction(action));
+        AddPromotionLog(player, GetRoleFromAction(action));
+        
+        CloseGossipMenuFor(player);
+        return true;
+    }
+};
+
+void AddSC_npc_promocion() { new npc_promocion(); }
+```
+
+### Base de Datos:
+
+```sql
+-- NPC en creature_template
+INSERT INTO creature_template (entry, modelid1, name, subname, ScriptName, npcflag, faction_A, faction_H)
+VALUES (60003, 25593, 'Maestro de Promoción', 'Equipamiento Inicial', 'npc_promocion', 1, 35, 35);
+
+-- Tabla de items
+CREATE TABLE npc_promotion_items (
+    class INT NOT NULL,
+    faction INT NOT NULL,
+    `function` VARCHAR(50) NOT NULL,
+    head INT, neck INT, shoulders INT, chest INT, /* ... más slots ... */
+    PRIMARY KEY (class, faction, `function`)
+);
+
+-- Tabla de log
+CREATE TABLE npc_promotion_log (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    accountId INT NOT NULL,
+    characterName VARCHAR(255),
+    class TINYINT,
+    spec VARCHAR(50),
+    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+### Ventajas de este Diseño:
+*   ✅ **Escalable**: Añadir nuevas clases solo requiere editar la DB
+*   ✅ **Auditable**: Todo uso queda registrado
+*   ✅ **Reutilizable**: El patrón se puede aplicar a otros NPCs
+*   ✅ **Mantenible**: Cambiar equipamiento no requiere recompilar
+
+### Documentación Completa:
+Ver `NPC_PROMOCION_README.md` y `NPC_PROMOCION.md` para detalles técnicos completos.
+
 ## Estructura de Base de Datos (OlympusCore / Cataclysm)
 
 Al crear el SQL para `creature_template`, ten en cuenta que tu base de datos tiene algunas columnas con nombres diferentes al estándar de Trinity/AzerothCore.

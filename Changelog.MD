@@ -149,3 +149,49 @@ Add Custom NPC Heirloom Vendor (Vendedor de Reliquias)
         1. Recompile worldserver (Clean & Build) to include the new script `src/server/scripts/Custom/npc_heirloom.cpp` and `ScriptLoader.cpp` changes.
         2. Execute the SQL file in 'world' database: `sql/CUSTOM/world/2026_01_22_00_npc_heirloom.sql`.
         3. Spawn in game: `.npc add 99000`.
+
+### ==== 23/01/2026 ====
+Add Complete Promotion System (Sistema de Promoción NPC)
+    * New script: `src/server/scripts/Custom/npc_promocion.cpp` (685 lines)
+    * New NPC: ID 60003 "Maestro de Promoción" with ScriptName='npc_promocion'
+    * Database tables created:
+        - `world.npc_promotion_items` (40 gear configurations for all classes)
+        - `characters.npc_promotion_log` (usage tracking)
+    * Features:
+        - Instant level 80 boost
+        - Complete Tier 10 Normal (ilvl 264) gear auto-equipped
+        - ICC 25H accessories (ilvl 277)
+        - 10,000 gold
+        - 4x 22-slot bags (Embersilk Bag)
+        - All flying mounts learned (75, 150, 280, 310)
+        - Skills maxed for level 80
+        - Armor proficiencies (Plate/Mail)
+        - Dynamic gossip menu per class (10 classes, 22 specs)
+        - 1 use per account limit
+        - Full database logging
+    * Supported classes: Warrior, Paladin, Hunter, Rogue, Priest, Death Knight, Shaman, Mage, Warlock, Druid
+    * SQL files:
+        - `sql/CUSTOM/world/2026_01_23_00_npc_promotion_structure.sql`
+        - `sql/CUSTOM/world/2026_01_23_01_npc_promotion_validation.sql`
+        - `sql/CUSTOM/world/2026_01_23_03_npc_promotion_data_full.sql`
+        - `sql/CUSTOM/characters/2026_01_23_00_npc_promotion_log.sql`
+    * Documentation: `NPC_PROMOCION.md` (technical) & `NPC_PROMOCION_README.md` (user guide)
+    * Instructions:
+        1. Execute SQL files in 'world' and 'characters' databases
+        2. Recompile worldserver to include new script
+        3. Spawn in game: `.npc add 60003`
+        4. Recommended location: Dalaran (Krasus' Landing) coords 5804.14, 624.77, 647.76
+Fix critical bug in First Character Level 80 system (custom_starter_pro.cpp)
+    * Issue: Logic allowed multiple characters per account to receive level 80 boost
+    * Solution: Implemented proper tracking system with `characters.first_char_boost_log` table
+    * New behavior: Only ONE character per account receives automatic level 80 boost on first login
+    * SQL file: `sql/CUSTOM/characters/2026_01_23_01_first_char_boost_log.sql`
+    * Prevention: UNIQUE constraint on accountId ensures 1 boost per account at database level
+Remove obsolete script: `npc_icc_vendor.cpp` (replaced by npc_promocion.cpp)
+Update documentation:
+    * `CUSTOMS SCRIPTS.md` - Added npc_promocion.cpp documentation
+    * `CUSTOMS SCRIPTS.md` - Added custom_starter_pro.cpp documentation (first character level 80 system)
+    * `NPC_PROMOCION_README.md` - Complete user guide with reset instructions
+    * `ADMIN_RESET_GUIDE.md` - NEW: Administrator guide with all reset commands and troubleshooting
+    * Added workflow: First char → Level 80 (auto) → Use NPC 60003 → Full Tier 10 gear → Ready for endgame
+    * Added SQL queries for auditing, statistics, and mass resets

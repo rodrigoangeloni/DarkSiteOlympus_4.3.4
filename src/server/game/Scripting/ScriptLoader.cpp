@@ -1629,6 +1629,8 @@ void AddSC_PvPTitles();
 void AddSC_world_chat();
 void AddSC_VAS_AutoBalance();
 void AddSC_npc_heirloom();
+void AddSC_FirstCharLevel80();
+void AddSC_npc_promocion();
 #endif
 
 void AddCustomScripts()
@@ -1650,6 +1652,8 @@ void AddCustomScripts()
 	AddSC_world_chat();
 	AddSC_VAS_AutoBalance();
     AddSC_npc_heirloom();
+    AddSC_FirstCharLevel80();
+    AddSC_npc_promocion();
 
 #endif
 }

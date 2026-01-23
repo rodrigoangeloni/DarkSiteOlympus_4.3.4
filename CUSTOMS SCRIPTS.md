@@ -5,6 +5,29 @@ Este documento detalla los scripts personalizados disponibles en la carpeta `src
 ## 1. NPCs Interactivos
 Para usar estos scripts, busca su `entry` (ID) en la base de datos o crea un nuevo NPC asignándole el `ScriptName` exacto.
 
+### `npc_promocion.cpp` (Sistema de Promoción Completo) ⭐ NUEVO
+*   **ScriptName:** `"npc_promocion"`
+*   **NPC ID:** `60003`
+*   **Base de Datos:**
+    *   `world.npc_promotion_items` - 40 configuraciones de equipamiento
+    *   `characters.npc_promotion_log` - Registro de uso
+*   **Requisitos:** Nivel menor a 80, 1 uso por cuenta
+*   **Función:** Sistema completo de "Instant 80" con equipamiento Tier 10 (ilvl 264) automático
+*   **Características:**
+    *   ✅ Sube al nivel **80** instantáneamente
+    *   ✅ Entrega **10,000 de oro**
+    *   ✅ Equipa **Tier 10 Normal completo** + accesorios ICC 25H (ilvl 277)
+    *   ✅ **4 bolsas** de 22 slots (Emblemático de Escarcha)
+    *   ✅ Enseña todas las **monturas de vuelo** (75, 150, 280, 310)
+    *   ✅ Actualiza **skills al máximo** para nivel 80
+    *   ✅ Proficiencias de armadura (Plate/Mail según clase)
+    *   ✅ **Menú dinámico** según clase (10 clases, 22 especializaciones)
+    *   ✅ Control de uso: **1 vez por cuenta**
+    *   ✅ Registro completo en base de datos
+*   **Clases Soportadas:** Warrior (Tank/DPS), Paladin (Tank/Heal/DPS), Hunter (DPS), Rogue (DPS), Priest (Heal/DPS), Death Knight (Tank/DPS), Shaman (Caster/Melee/Heal), Mage (DPS), Warlock (DPS), Druid (Caster/Tank/Melee/Heal)
+*   **Uso:** Hablar con el NPC → Seleccionar especialización → Recibir promoción completa
+*   **Documentación:** Ver `NPC_PROMOCION_README.md`
+
 ### `npc_heirloom.cpp` (Vendedor de Reliquias)
 *   **ScriptName:** `"npc_heirloom"`
 *   **NPC ID recomendado:** `99000`
@@ -46,7 +69,19 @@ Para usar estos scripts, busca su `entry` (ID) en la base de datos o crea un nue
 
 ---
 
-## 2. Items Especiales & Level Up
+## 2. Scripts de Jugador (Pasivos)
+
+### `custom_starter_pro.cpp` (Primer Personaje Nivel 80) ⭐
+*   **Tipo:** Script de Jugador (Pasivo, se ejecuta en OnLogin)
+*   **Función:** Detecta el **primer personaje** creado en una cuenta y lo sube automáticamente a nivel **80**
+*   **Requisitos:** 
+    *   Ser nivel 1 (primer login del personaje)
+    *   Ser el primer personaje de la cuenta
+*   **Efecto:**
+    1.  Sube a nivel **80** instantáneamente
+    2.  Teletransporta a ciudad capital según facción (Stormwind/Orgrimmar)
+    3.  Envía mensaje de bienvenida
+*   **Nota:** Este sistema es complementario al `npc_promocion.cpp`. Sube a nivel 80 pero NO da equipamiento. Los jugadores deben usar el NPC de Promoción para obtener gear completo.
 
 ### `level_up.cpp` (Boost Instantáneo 85)
 **¡ATENCIÓN!** Este script no es pasivo. Funciona al **USAR** ciertos ítems especiales.
@@ -82,6 +117,17 @@ Para usar estos scripts, busca su `entry` (ID) en la base de datos o crea un nue
 ---
 
 ## Cómo activar estos scripts
-1.  Asegúrate de que la función de carga (ej: `AddSC_npc_teleport`) esté llamada en `src/server/game/Scripting/ScriptLoader.cpp`.
+1.  Asegúrate de que la función de carga (ej: `AddSC_npc_teleport`, `AddSC_npc_promocion`) esté llamada en `src/server/game/Scripting/ScriptLoader.cpp`.
 2.  Recompila el `worldserver`.
 3.  Asegúrate de tener los NPCs creados en la base de datos `world.creature_template` apuntando al `ScriptName` correcto.
+
+## Sistema de Promoción vs Primer Personaje
+
+### Flujo Recomendado para Nuevos Jugadores:
+1.  **Crear primer personaje** → `custom_starter_pro.cpp` lo sube a **nivel 80** automáticamente
+2.  **Hablar con NPC 60003** (Maestro de Promoción) → `npc_promocion.cpp` equipa **Tier 10 completo** + oro + bolsas + monturas
+3.  **¡Listo para endgame!** - El jugador puede ir directamente a ICC, arenas o dungeons
+
+### Diferencias Clave:
+*   **custom_starter_pro.cpp**: Solo nivel 80, sin equipamiento
+*   **npc_promocion.cpp**: Equipamiento completo + recursos, pero requiere interacción con NPC
